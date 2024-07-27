@@ -1,0 +1,23 @@
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: kfc_development
+  username: karemu200018
+  password: mydb
+
+test:
+  <<: *default
+  database: kfc_test
+  username: karemu200018
+  password: mydb
+
+production:
+  <<: *default
+  database: kfc_production
+  username: karemu200018
+  password: mydb
