@@ -6,18 +6,18 @@ default: &default
 
 development:
   <<: *default
-  database: kfc_development
+  database: kfcnew_development
   username: karemu200018
   password: mydb
 
 test:
   <<: *default
-  database: kfc_test
+  database: kfcnew_test
   username: karemu200018
   password: mydb
 
 production:
   <<: *default
-  database: kfc_production
+  database: kfcnew_production
   username: karemu200018
   password: mydb
