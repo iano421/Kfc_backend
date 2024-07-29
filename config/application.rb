@@ -24,7 +24,7 @@ module Kfc
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins "http://localhost:1842", "http://localhost:5000"  # Add your React app's URL here
+        origins "http://localhost:1842", "http://localhost:5000","https://kfceee.vercel.app/"  # Add your React app's URL here
         resource "*",
           headers: :any,
           methods: [:get, :post, :put, :patch, :delete, :options, :head],
